@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public float normalHeight = 2f;
 
     private bool isGrounded;
-    private float groundDistance = 0.4f;
+    private float groundDistance = 1.5f;
     private Vector3 velocity;
     private bool isCrouching;
 
