@@ -11,7 +11,7 @@ public class SlenderBehavior : MonoBehaviour
     public float teleportDistance = 2f;
     public float teleportCooldown = 5f;
     public float minTimeBetweenTeleports = 10f;
-    public float maxTimeBetweenTeleports = 30f;
+    public float maxTimeBetweenTeleports = 20f;
     public float minDistanceFromP = 10f;
     public float maxDistanceFromP = 20f;
 
@@ -19,9 +19,9 @@ public class SlenderBehavior : MonoBehaviour
     private CharacterController controller;
     private float teleportTimer;
     private float timeBetweenTeleports;
-    private float angleTimer;
+    //private float angleTimer;
     private bool isTeleporting = false;
-    private bool isChasing = false;
+    //private bool isChasing = false;
     public EnergyBar energyBar;
     public float currentEnergy;
 
@@ -31,7 +31,7 @@ public class SlenderBehavior : MonoBehaviour
         controller = GetComponent<CharacterController>();
         timeBetweenTeleports = Random.Range(minTimeBetweenTeleports, maxTimeBetweenTeleports);
         teleportTimer = timeBetweenTeleports;
-        angleTimer = 5f;
+        //angleTimer = 5f;
         energyBar = player.gameObject.GetComponent<EnergyBar>();
         currentEnergy = energyBar.energy;
     }
@@ -43,18 +43,18 @@ public class SlenderBehavior : MonoBehaviour
 
             if (Vector3.Distance(transform.position, player.position) >= detectionDistance)
             {
-                isChasing = false;
+                //isChasing = false;
             }
             // Si el jugador está lo suficientemente cerca, persigue al jugador
             if (Vector3.Distance(transform.position, player.position) <= detectionDistance)
             {
-                angleTimer = 5f;
+                //angleTimer = 5f;
                 transform.LookAt(player);
                 controller.Move(transform.forward * moveSpeed * Time.deltaTime);
-                isChasing = true;
+                //isChasing = true;
                 if (Vector3.Distance(transform.position, player.position) <= teleportDistance)
                 {
-                    StartCoroutine(Teleport());
+                    //StartCoroutine(Teleport());
                 }
             }
             // Si no, elige una nueva dirección al azar y camina
@@ -83,13 +83,20 @@ public class SlenderBehavior : MonoBehaviour
     IEnumerator Teleport()
     {
         isTeleporting = true;
-        isChasing = false;
+        //isChasing = false;
         controller.enabled = false;
         yield return new WaitForSeconds(1f);
         transform.position = GetRandomPosition();
         controller.enabled = true;
         teleportTimer = timeBetweenTeleports;
-        timeBetweenTeleports = Random.Range(minTimeBetweenTeleports, maxTimeBetweenTeleports);
+        if(energyBar.energy <= 50){
+            teleportTimer *= 0.25f;
+        }
+        if(energyBar.energy <= 50){
+            timeBetweenTeleports = Random.Range(minTimeBetweenTeleports / 2, maxTimeBetweenTeleports / 2);
+        }else{
+            timeBetweenTeleports = Random.Range(minTimeBetweenTeleports, maxTimeBetweenTeleports);
+        }
         isTeleporting = false;
     }
 
@@ -120,4 +127,11 @@ public class SlenderBehavior : MonoBehaviour
         }
         return new Vector3(x, 1, z);
     }
+
+    void OnTriggerEnter(Collider other)
+	{
+		if (other.gameObject.name == "Jugador") {
+             Debug.Log("Me esta tocando!!");
+		}
+	}
 }
