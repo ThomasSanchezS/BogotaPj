@@ -34,7 +34,6 @@ public class EnergyBar : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(m_Vignette.intensity.value);
         DecreaseEnergy();
         //UpdateUI();
         CheckThreshold();
