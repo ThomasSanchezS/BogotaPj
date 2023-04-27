@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
      public float minRotation = -65.0f;
     public float maxRotation = 60.0f;
     float h_mouse, v_mouse;
+    public Animator animate;
 
     public float speed = 6f;
     public float runSpeed = 11f;
@@ -28,13 +29,17 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        animate = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         isGrounded = Physics.CheckSphere(transform.position, groundDistance, LayerMask.GetMask("Ground"));
-        
+        if(isGrounded){
+            animate.SetBool("IsJumping", false);
+            Debug.Log(isGrounded);
+        }
         if(isGrounded && velocity.y < 0f){
             velocity.y = -2f;
         }
@@ -42,15 +47,31 @@ public class PlayerMovement : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+        if(Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0){
+            animate.SetBool("Walk", true);
+        }else{
+            animate.SetBool("Walk", false);
+        }
 
         float currentSpeed = isCrouching ? speed /2f : (Input.GetKey(KeyCode.LeftShift) ? runSpeed : speed);
+        if(Input.GetKey(KeyCode.LeftShift)){
+            animate.SetBool("Walk", false);
+            animate.SetBool("Run", true);
+            Debug.Log("shift deberia animarse jueputa");
+        }else{
+            animate.SetBool("Run", false);
+        }
 
         Vector3 moveDirection = transform.TransformDirection(direction) * currentSpeed * Time.deltaTime;
         controller.Move(moveDirection);
 
         if(Input.GetKeyDown(KeyCode.Space) && isGrounded){
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            isGrounded = false;
+            animate.SetTrigger("Jump");
+            animate.SetBool("IsJumping", true);
         }
+        
 
         if(Input.GetKeyDown(KeyCode.LeftControl)){
             isCrouching = true;
