@@ -5,16 +5,18 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     public bool HasKey = false;
-    // Start is called before the first frame update
-    private void OnTriggerEnter(Collider other){
+    
 
-        if(HasKey && other.CompareTag("Player")){
+     private void OnTriggerEnter(Collider other){
+
+        if(HasKey == true && other.CompareTag("Player")){
+            Debug.Log("Trigger");
             OpenDoor();
         }
     }
 
-    private void OpenDoor(){
 
-        gameObject.SetActive(false);
+    private void OpenDoor(){
+        this.transform.parent.gameObject.SetActive(false);
     }
 }

@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     public float normalHeight = 2f;
 
     private bool isGrounded;
-    private float groundDistance = 1.5f;
+    private float groundDistance = 3f;
     private Vector3 velocity;
     private bool isCrouching;
 
@@ -38,7 +38,6 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = Physics.CheckSphere(transform.position, groundDistance, LayerMask.GetMask("Ground"));
         if(isGrounded){
             animate.SetBool("IsJumping", false);
-            Debug.Log(isGrounded);
         }
         if(isGrounded && velocity.y < 0f){
             velocity.y = -2f;
@@ -70,6 +69,7 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
             animate.SetTrigger("Jump");
             animate.SetBool("IsJumping", true);
+            Debug.Log(isGrounded);
         }
         
 
