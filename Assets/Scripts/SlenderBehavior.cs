@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class SlenderBehavior : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class SlenderBehavior : MonoBehaviour
     public float maxTimeBetweenTeleports = 20f;
     public float minDistanceFromP = 10f;
     public float maxDistanceFromP = 20f;
+    public Animator animate;
+    
 
     private Transform player;
     private CharacterController controller;
@@ -34,6 +37,7 @@ public class SlenderBehavior : MonoBehaviour
         //angleTimer = 5f;
         energyBar = player.gameObject.GetComponent<EnergyBar>();
         currentEnergy = energyBar.energy;
+        animate = GetComponent<Animator>();
     }
 
     void Update()
@@ -49,13 +53,18 @@ public class SlenderBehavior : MonoBehaviour
             if (Vector3.Distance(transform.position, player.position) <= detectionDistance)
             {
                 //angleTimer = 5f;
-                transform.LookAt(player);
+                Vector3 playerPos = player.position;
+                playerPos.y = 0;
+                transform.LookAt(playerPos);
                 controller.Move(transform.forward * moveSpeed * Time.deltaTime);
+                animate.SetBool("isChasing", true);
                 //isChasing = true;
                 if (Vector3.Distance(transform.position, player.position) <= teleportDistance)
                 {
                     //StartCoroutine(Teleport());
                 }
+            }else{
+                animate.SetBool("isChasing", false);
             }
             // Si no, elige una nueva dirección al azar y camina
             /**else if (!isChasing)
@@ -77,6 +86,11 @@ public class SlenderBehavior : MonoBehaviour
         if (teleportTimer <= 0 && !isTeleporting)
         {
             StartCoroutine(Teleport());
+        }
+        if(transform.position.y != 0){
+            Vector3 posY = transform.position;
+            posY.y = 0;
+            transform.position = posY;
         }
     }
 
@@ -131,7 +145,7 @@ public class SlenderBehavior : MonoBehaviour
     void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.name == "Jugador") {
-             Debug.Log("Me esta tocando!!");
+             SceneManager.LoadScene("GameOver");
 		}
 	}
 }
