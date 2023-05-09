@@ -15,14 +15,21 @@ public class EnergyBar : MonoBehaviour
     public float startingRunningSpeed;
     public Camera cam;
 
-    public Image energyBarUI;
+    public Slider slider;
+    public Gradient gradient;
+    public Image fill;
 
     public PlayerMovement playerMovement;
     PostProcessVolume m_Volume;
     Vignette m_Vignette;
+    public SetParameterByID setParameterByID;
 
     void Start()
     {
+        setParameterByID.volume = 0f;
+        slider.maxValue = energy;
+        slider.value = energy;
+        fill.color = gradient.Evaluate(1f);
         playerMovement = GetComponent<PlayerMovement>();
         startingSpeed = playerMovement.speed;
         startingRunningSpeed = playerMovement.runSpeed;
@@ -48,6 +55,10 @@ public class EnergyBar : MonoBehaviour
         {
             energy = 0;
         }
+        slider.value = energy;
+        fill.color = gradient.Evaluate(slider.normalizedValue);
+        float vol= Mathf.Round(slider.normalizedValue * 100f) / 100f;
+        setParameterByID.volume = 1 - vol;
     }
 
     /*void UpdateUI()
