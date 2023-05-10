@@ -39,9 +39,7 @@ public class PlayerMovement : MonoBehaviour
         if(isGrounded){
             animate.SetBool("IsJumping", false);
         }
-        if(isGrounded && velocity.y < 0f){
-            velocity.y = -2f;
-        }
+        
 
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
@@ -56,7 +54,6 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKey(KeyCode.LeftShift)){
             animate.SetBool("Walk", false);
             animate.SetBool("Run", true);
-            Debug.Log("shift deberia animarse jueputa");
         }else{
             animate.SetBool("Run", false);
         }

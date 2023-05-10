@@ -4818,6 +4818,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f8b5ac404f99f644819a257320d06be, type: 3}
+--- !u!1 &1762709837 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1190889037738854538, guid: 10d15698464ff7e4082cef9d4c5225c7, type: 3}
+  m_PrefabInstance: {fileID: 1902378145}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1762709838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762709837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d123265537b09194e8e1a34f4b69231e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fmodEvent:
+    Guid:
+      Data1: 258414945
+      Data2: 1246588690
+      Data3: 1908749247
+      Data4: 1256865121
+    Path: event:/SFX/Latido
+  volume: 0
 --- !u!1 &1771089951 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6954c432b99897b4dbdabb2220be0f92, type: 3}
@@ -5362,6 +5387,10 @@ PrefabInstance:
       propertyPath: gradient.key6.r
       value: 0.38609385
       objectReference: {fileID: 0}
+    - target: {fileID: 1190889037738854579, guid: 10d15698464ff7e4082cef9d4c5225c7, type: 3}
+      propertyPath: setParameterByID
+      value: 
+      objectReference: {fileID: 1762709838}
     - target: {fileID: 1190889037738854579, guid: 10d15698464ff7e4082cef9d4c5225c7, type: 3}
       propertyPath: gradient.m_NumColorKeys
       value: 7
