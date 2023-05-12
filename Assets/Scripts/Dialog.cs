@@ -13,10 +13,12 @@ public class Dialog : MonoBehaviour
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField, TextArea(4,6)] private string[] dialogueLines;
     private float typingTime = 0.05f;
+    public Animator animate;
     
     void Start()
     {
         lineIndex = 0;
+        animate = GetComponent<Animator>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -65,6 +67,7 @@ public class Dialog : MonoBehaviour
     void Update()
     {
         if(isPlayerInRange && Input.GetKeyDown(KeyCode.E)){
+            animate.SetBool("isTalking", true);
             if(!didDialogueStart){
                 StartDialogue();
             }
@@ -72,8 +75,10 @@ public class Dialog : MonoBehaviour
                 NextDialogueLine();
             }
         }else if(!isPlayerInRange || lineIndex == -1){
+            animate.SetBool("isTalking", false);
             didDialogueStart = false;
             dialoguePanel.SetActive(false);
+            lineIndex = 0;
         }
     }
 }
