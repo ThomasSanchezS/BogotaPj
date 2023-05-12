@@ -24,6 +24,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-168747720849294334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Smoke
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Smoke
+  Guid:
+    Data1: -104236264
+    Data2: 1276641252
+    Data3: -2133348981
+    Data4: -2079343757
+  Banks:
+  - {fileID: 8969678672991903092}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,13 +69,43 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: 2407205658746844022}
   - {fileID: 4199439091468880175}
+  - {fileID: -168747720849294334}
+  - {fileID: 2400429374088336503}
+  - {fileID: 5101392032312669495}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8969678672991903092}
   StringsBanks:
   - {fileID: 5623701174005439765}
-  cacheTime: 638194228771863811
+  cacheTime: 638195102293050132
   cacheVersion: 131603
+--- !u!114 &2400429374088336503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Suicide
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Suicide
+  Guid:
+    Data1: -1658902104
+    Data2: 1156718675
+    Data3: -1842518614
+    Data4: 1484071447
+  Banks:
+  - {fileID: 8969678672991903092}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3813
 --- !u!114 &2407205658746844022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,6 +162,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1498
+--- !u!114 &5101392032312669495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Puerta
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Puerta
+  Guid:
+    Data1: -1864064095
+    Data2: 1312069772
+    Data3: -534386791
+    Data4: 507969723
+  Banks:
+  - {fileID: 8969678672991903092}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3226
 --- !u!114 &5623701174005439765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,10 +204,10 @@ MonoBehaviour:
   Path: Assets/Sounds/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638194228771863811
+  lastModified: 638195102293050132
   FileSizes:
   - Name: Desktop
-    Value: 910
+    Value: 1032
   Exists: 1
 --- !u!114 &7251109918230585607
 MonoBehaviour:
@@ -164,8 +248,8 @@ MonoBehaviour:
   Path: Assets/Sounds/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638194228771833800
+  lastModified: 638195102293030138
   FileSizes:
   - Name: Desktop
-    Value: 438752
+    Value: 1234720
   Exists: 1
