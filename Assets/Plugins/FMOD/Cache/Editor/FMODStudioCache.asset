@@ -41,12 +41,13 @@ MonoBehaviour:
   - {fileID: 8969678672991903092}
   EditorEvents:
   - {fileID: 2407205658746844022}
+  - {fileID: 4199439091468880175}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8969678672991903092}
   StringsBanks:
   - {fileID: 5623701174005439765}
-  cacheTime: 638191812441171552
+  cacheTime: 638194228771863811
   cacheVersion: 131603
 --- !u!114 &2407205658746844022
 MonoBehaviour:
@@ -77,6 +78,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 41122
+--- !u!114 &4199439091468880175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/DialogoFlaco
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/DialogoFlaco
+  Guid:
+    Data1: 323251447
+    Data2: 1183796369
+    Data3: 414188709
+    Data4: -1199679447
+  Banks:
+  - {fileID: 8969678672991903092}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1498
 --- !u!114 &5623701174005439765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,10 +120,10 @@ MonoBehaviour:
   Path: Assets/Sounds/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638191812441171552
+  lastModified: 638194228771863811
   FileSizes:
   - Name: Desktop
-    Value: 856
+    Value: 910
   Exists: 1
 --- !u!114 &7251109918230585607
 MonoBehaviour:
@@ -136,8 +164,8 @@ MonoBehaviour:
   Path: Assets/Sounds/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638191812441141500
+  lastModified: 638194228771833800
   FileSizes:
   - Name: Desktop
-    Value: 418656
+    Value: 438752
   Exists: 1
