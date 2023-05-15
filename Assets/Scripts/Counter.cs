@@ -12,12 +12,12 @@ public class Counter : MonoBehaviour
     void Start()
     {
         cards = 0;
-        texto.text = "Monedas:" + " 0" ;
+        texto.text = "Tarjetas: " + " 0/4" ;
     }
 
     public void UpdateCounter(){
         cards++;
-        texto.text = "Monedas " + cards.ToString();
+        texto.text = "Tarjetas: " + cards.ToString() + "/4";
     }
 
     // Update is called once per frame
