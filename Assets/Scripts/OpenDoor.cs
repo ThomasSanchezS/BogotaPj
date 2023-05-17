@@ -36,19 +36,20 @@ public class OpenDoor : MonoBehaviour
     void Update()
     {
         if(inReach && Input.GetButtonDown("Interact")){
-
-            DoorOpens();
-        }
-        else{
-            DoorCloses();
+            if(!isOpened){
+                DoorOpens();
+                Debug.Log("se abrió esta sapa hpta");
+            }
+            else{
+                DoorCloses();
+           }
+            
         }
     }
 
     void DoorOpens(){
-        Debug.Log("se abrió esta sapa hpta");
         animate.SetBool("Open", true);
         animate.SetBool("Closed", false);
-        doorSound.Play();
         isOpened = true;
     }
 
@@ -56,6 +57,6 @@ public class OpenDoor : MonoBehaviour
         Debug.Log("se cerró esta sapa hpta");
         animate.SetBool("Open", false);
         animate.SetBool("Closed", true);
-        doorSound.Stop();
+        isOpened = false;
     }
 }
