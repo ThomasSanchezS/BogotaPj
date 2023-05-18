@@ -78,6 +78,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5500
+--- !u!114 &-1478975275668453904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundTrack/Cinematica
+  m_EditorClassIdentifier: 
+  Path: event:/SoundTrack/Cinematica
+  Guid:
+    Data1: 1438961604
+    Data2: 1084684596
+    Data3: -834895963
+    Data4: 1543163016
+  Banks:
+  - {fileID: 8969678672991903092}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 144587
 --- !u!114 &-168747720849294334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,12 +164,13 @@ MonoBehaviour:
   - {fileID: 7221828332941603029}
   - {fileID: 7608925442275323685}
   - {fileID: 5285491129034049938}
+  - {fileID: -1478975275668453904}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8969678672991903092}
   StringsBanks:
   - {fileID: 5623701174005439765}
-  cacheTime: 638199641837126757
+  cacheTime: 638199747241694547
   cacheVersion: 131603
 --- !u!114 &2314256664117296448
 MonoBehaviour:
@@ -350,10 +378,10 @@ MonoBehaviour:
   Path: Assets/Sounds/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638199641837126757
+  lastModified: 638199747241694547
   FileSizes:
   - Name: Desktop
-    Value: 1536
+    Value: 1588
   Exists: 1
 --- !u!114 &6374105242558473599
 MonoBehaviour:
@@ -556,8 +584,8 @@ MonoBehaviour:
   Path: Assets/Sounds/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638199641837106743
+  lastModified: 638199747241664533
   FileSizes:
   - Name: Desktop
-    Value: 7914400
+    Value: 9557184
   Exists: 1

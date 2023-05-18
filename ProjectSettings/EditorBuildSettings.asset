@@ -27,6 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/GameOver2.unity
     guid: 8abadff06845d8b49b7e962cde35f8ae
   - enabled: 1
-    path: Assets/Scenes/EndGame.unity
-    guid: b16a8ece7179a8b448006e0a34f7b995
+    path: Assets/Scenes/Cinematica.unity
+    guid: 747bf3d1eb272914f860f3b15ee979a0
   m_configObjects: {}

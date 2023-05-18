@@ -7,7 +7,7 @@ public class FinalDooe : MonoBehaviour
 {
     void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Player")) {
-            SceneManager.LoadScene("EndGame");
+            SceneManager.LoadScene("Cinematica");
         }
     }
 }
