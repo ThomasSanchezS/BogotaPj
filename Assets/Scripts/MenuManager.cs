@@ -14,7 +14,7 @@ public class MenuManager : MonoBehaviour
 
 public void QuitGame () {
     Debug.Log("Te saliste puto");
-    //Application.Quit();
+    Application.Quit();
     }
 
 public void ResetLVL2(){
@@ -28,4 +28,8 @@ public void Menu(){
 public void ResetLVL3(){
     SceneManager.LoadScene("Nivel3");
     }
+
+public void PlayComic(){
+    SceneManager.LoadScene("Cutscene");
+}
 }

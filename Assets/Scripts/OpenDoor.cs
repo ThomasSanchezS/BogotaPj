@@ -30,14 +30,12 @@ public class OpenDoor : MonoBehaviour
             inReach = true;
             openText.SetActive(true);
         }
-        if (other.gameObject.name == "gordoF") {
-            animate.SetBool("Open", true);
-        }
     }
 
     void OnTriggerExit(Collider other) {
         if (other.gameObject.name == "Reach") {
-            DoorOpens();
+            inReach = false;
+            openText.SetActive(false);
         }
     } 
 

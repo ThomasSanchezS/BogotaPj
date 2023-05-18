@@ -13896,6 +13896,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/SFX/Smoke
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -104236264
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1276641252
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -2133348981
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -2079343757
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
 --- !u!1001 &946127607
@@ -16345,6 +16373,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/SFX/Smoke
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -104236264
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1276641252
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -2133348981
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -2079343757
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
 --- !u!4 &1111940112 stripped
@@ -16801,6 +16857,34 @@ PrefabInstance:
     - target: {fileID: 823469625282719658, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/SFX/Smoke
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -104236264
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1276641252
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -2133348981
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -2079343757
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
@@ -26548,8 +26632,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7fa104a0dc7c9c847b58a9b71f8b73f0, type: 2}
+  m_sharedMaterial: {fileID: 7263795233041022600, guid: 7fa104a0dc7c9c847b58a9b71f8b73f0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -26573,8 +26657,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 82.21
+  m_fontSizeBase: 82.21
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -29613,6 +29697,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/SFX/Smoke
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -104236264
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1276641252
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -2133348981
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -2079343757
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
 --- !u!1 &1841995900 stripped
@@ -32145,6 +32257,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/SFX/Smoke
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -104236264
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1276641252
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -2133348981
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -2079343757
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
 --- !u!4 &2047737826 stripped
@@ -33826,6 +33966,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/SFX/Smoke
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -104236264
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1276641252
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -2133348981
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264300199135499539, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -2079343757
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 754d045b8983aea428c199a2fa058e7a, type: 3}
 --- !u!4 &2895054889288912415 stripped
@@ -34229,6 +34397,37 @@ MonoBehaviour:
       Data4: 1256865121
     Path: event:/SFX/Latido
   volume: 0
+--- !u!114 &5128599521722885561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81596596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2058701358
+      Data2: 1242272155
+      Data3: -1029404257
+      Data4: 715387865
+    Path: event:/SoundTrack/MusicaLvl2
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &6317021210908765471
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -104,7 +104,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 3694
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,12 +133,16 @@ MonoBehaviour:
   - {fileID: 2314256664117296448}
   - {fileID: 7405531133792010620}
   - {fileID: 6374105242558473599}
+  - {fileID: 6817199787996642113}
+  - {fileID: 7221828332941603029}
+  - {fileID: 7608925442275323685}
+  - {fileID: 5285491129034049938}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8969678672991903092}
   StringsBanks:
   - {fileID: 5623701174005439765}
-  cacheTime: 638199566038981108
+  cacheTime: 638199641837126757
   cacheVersion: 131603
 --- !u!114 &2314256664117296448
 MonoBehaviour:
@@ -304,6 +308,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3226
+--- !u!114 &5285491129034049938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundTrack/MusicaMenu
+  m_EditorClassIdentifier: 
+  Path: event:/SoundTrack/MusicaMenu
+  Guid:
+    Data1: 384453108
+    Data2: 1301384241
+    Data3: -394595664
+    Data4: -1317158301
+  Banks:
+  - {fileID: 8969678672991903092}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 141008
 --- !u!114 &5623701174005439765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,10 +350,10 @@ MonoBehaviour:
   Path: Assets/Sounds/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638199566038981108
+  lastModified: 638199641837126757
   FileSizes:
   - Name: Desktop
-    Value: 1350
+    Value: 1536
   Exists: 1
 --- !u!114 &6374105242558473599
 MonoBehaviour:
@@ -351,6 +382,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5584
+--- !u!114 &6817199787996642113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundTrack/MusicaLvl2
+  m_EditorClassIdentifier: 
+  Path: event:/SoundTrack/MusicaLvl2
+  Guid:
+    Data1: 2058701358
+    Data2: 1242272155
+    Data3: -1029404257
+    Data4: 715387865
+  Banks:
+  - {fileID: 8969678672991903092}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 135888
 --- !u!114 &6820568500837701426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,6 +436,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2332
+--- !u!114 &7221828332941603029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundTrack/MusicaLvl1
+  m_EditorClassIdentifier: 
+  Path: event:/SoundTrack/MusicaLvl1
+  Guid:
+    Data1: -76463569
+    Data2: 1317146988
+    Data3: -1513141057
+    Data4: -180840500
+  Banks:
+  - {fileID: 8969678672991903092}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 206654
 --- !u!114 &7251109918230585607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -429,6 +514,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2467
+--- !u!114 &7608925442275323685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundTrack/MusicaLvl3
+  m_EditorClassIdentifier: 
+  Path: event:/SoundTrack/MusicaLvl3
+  Guid:
+    Data1: -1097583562
+    Data2: 1234037860
+    Data3: 1492284327
+    Data4: -1422295757
+  Banks:
+  - {fileID: 8969678672991903092}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 83121
 --- !u!114 &8969678672991903092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,8 +556,8 @@ MonoBehaviour:
   Path: Assets/Sounds/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638199566038951100
+  lastModified: 638199641837106743
   FileSizes:
   - Name: Desktop
-    Value: 1605376
+    Value: 7914400
   Exists: 1
