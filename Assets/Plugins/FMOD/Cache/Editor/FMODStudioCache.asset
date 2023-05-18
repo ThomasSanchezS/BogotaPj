@@ -131,12 +131,14 @@ MonoBehaviour:
   - {fileID: -1948248841457234248}
   - {fileID: -8442939873173522472}
   - {fileID: 2314256664117296448}
+  - {fileID: 7405531133792010620}
+  - {fileID: 6374105242558473599}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8969678672991903092}
   StringsBanks:
   - {fileID: 5623701174005439765}
-  cacheTime: 638199534565614208
+  cacheTime: 638199566038981108
   cacheVersion: 131603
 --- !u!114 &2314256664117296448
 MonoBehaviour:
@@ -317,11 +319,38 @@ MonoBehaviour:
   Path: Assets/Sounds/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638199534565614208
+  lastModified: 638199566038981108
   FileSizes:
   - Name: Desktop
-    Value: 1266
+    Value: 1350
   Exists: 1
+--- !u!114 &6374105242558473599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Raul
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Raul
+  Guid:
+    Data1: 1810995039
+    Data2: 1290090470
+    Data3: 1629912458
+    Data4: -1232672067
+  Banks:
+  - {fileID: 8969678672991903092}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5584
 --- !u!114 &6820568500837701426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -373,6 +402,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &7405531133792010620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gabriel
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gabriel
+  Guid:
+    Data1: -200613189
+    Data2: 1124908015
+    Data3: 418631059
+    Data4: 1943671930
+  Banks:
+  - {fileID: 8969678672991903092}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2467
 --- !u!114 &8969678672991903092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,8 +444,8 @@ MonoBehaviour:
   Path: Assets/Sounds/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638199534565584200
+  lastModified: 638199566038951100
   FileSizes:
   - Name: Desktop
-    Value: 1496928
+    Value: 1605376
   Exists: 1

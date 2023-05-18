@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{6183f286-0faf-459c-aba6-e1db24da6f77}">
+		<property name="assetPath">
+			<value>SoundTrack/Musica Nivel 3.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>83.121632653061226</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{68578b9e-cc60-4861-a58d-dde428447113}</destination>
+		</relationship>
+	</object>
+</objects>
