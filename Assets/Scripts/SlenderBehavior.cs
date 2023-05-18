@@ -145,7 +145,7 @@ public class SlenderBehavior : MonoBehaviour
     void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.name == "Jugador") {
-             SceneManager.LoadScene("GameOver");
+             SceneManager.LoadScene("GameOver1");
 		}
 	}
 }

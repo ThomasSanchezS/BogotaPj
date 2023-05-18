@@ -7,7 +7,7 @@ public class OpenDoor : MonoBehaviour
     public Animator animate;
     public GameObject openText;
 
-    public AudioSource doorSound;
+    
 
     public bool inReach;
     public bool isOpened;
@@ -18,17 +18,26 @@ public class OpenDoor : MonoBehaviour
         inReach = false;
     }
 
+      void OnCollisionEnter(Collision other){
+        Debug.Log("colision");
+        if (other.gameObject.name == "gordoF") {
+            animate.SetBool("Open", true);
+    }
+    }
+
     void OnTriggerEnter(Collider other) {
         if (other.gameObject.name == "Reach") {
             inReach = true;
             openText.SetActive(true);
         }
+        if (other.gameObject.name == "gordoF") {
+            animate.SetBool("Open", true);
+        }
     }
 
     void OnTriggerExit(Collider other) {
         if (other.gameObject.name == "Reach") {
-            inReach = false;
-            openText.SetActive(false);
+            DoorOpens();
         }
     } 
 

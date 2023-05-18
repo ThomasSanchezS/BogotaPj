@@ -16,4 +16,16 @@ public void QuitGame () {
     Debug.Log("Te saliste puto");
     //Application.Quit();
     }
+
+public void ResetLVL2(){
+    SceneManager.LoadScene("Nivel2");
+    }
+
+public void Menu(){
+    SceneManager.LoadScene("Menu");
+    }
+
+public void ResetLVL3(){
+    SceneManager.LoadScene("Nivel3");
+    }
 }

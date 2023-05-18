@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8442939873173522472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/RespiracionFlaco
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/RespiracionFlaco
+  Guid:
+    Data1: 1308294055
+    Data2: 1316610481
+    Data3: 379394995
+    Data4: 71797477
+  Banks:
+  - {fileID: 8969678672991903092}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6536
 --- !u!114 &-6031078369297239685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24,6 +51,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-1948248841457234248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/RespiracionGordo
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/RespiracionGordo
+  Guid:
+    Data1: -151418858
+    Data2: 1274353394
+    Data3: -297729128
+    Data4: 281019272
+  Banks:
+  - {fileID: 8969678672991903092}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5500
 --- !u!114 &-168747720849294334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,13 +126,45 @@ MonoBehaviour:
   - {fileID: -168747720849294334}
   - {fileID: 2400429374088336503}
   - {fileID: 5101392032312669495}
+  - {fileID: 4377630392500044539}
+  - {fileID: 6820568500837701426}
+  - {fileID: -1948248841457234248}
+  - {fileID: -8442939873173522472}
+  - {fileID: 2314256664117296448}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8969678672991903092}
   StringsBanks:
   - {fileID: 5623701174005439765}
-  cacheTime: 638195102293050132
+  cacheTime: 638199534565614208
   cacheVersion: 131603
+--- !u!114 &2314256664117296448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Radio
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Radio
+  Guid:
+    Data1: -1830147390
+    Data2: 1337533724
+    Data3: 1053735327
+    Data4: 352254646
+  Banks:
+  - {fileID: 8969678672991903092}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4080
 --- !u!114 &2400429374088336503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,6 +248,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1498
+--- !u!114 &4377630392500044539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/EstaticaRadio
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/EstaticaRadio
+  Guid:
+    Data1: 406477842
+    Data2: 1337393311
+    Data3: 696580751
+    Data4: -794422810
+  Banks:
+  - {fileID: 8969678672991903092}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6034
 --- !u!114 &5101392032312669495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,11 +317,38 @@ MonoBehaviour:
   Path: Assets/Sounds/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638195102293050132
+  lastModified: 638199534565614208
   FileSizes:
   - Name: Desktop
-    Value: 1032
+    Value: 1266
   Exists: 1
+--- !u!114 &6820568500837701426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/DialogoGordo
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/DialogoGordo
+  Guid:
+    Data1: 1451825059
+    Data2: 1173854358
+    Data3: 925897880
+    Data4: 1709885709
+  Banks:
+  - {fileID: 8969678672991903092}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2332
 --- !u!114 &7251109918230585607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,8 +388,8 @@ MonoBehaviour:
   Path: Assets/Sounds/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638195102293030138
+  lastModified: 638199534565584200
   FileSizes:
   - Name: Desktop
-    Value: 1234720
+    Value: 1496928
   Exists: 1

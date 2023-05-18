@@ -1,12 +1,32 @@
 fileFormatVersion: 2
 guid: 698aee11a2ae783448f292e6984a2cc5
 ModelImporter:
-  serializedVersion: 21202
+  serializedVersion: 21300
   internalIDToNameTable:
   - first:
       74: -7449713878732132199
     second: metarig|metarig|metarig|metarigAction.002
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color
+    second: {fileID: 2100000, guid: 575991ef9264f874bacc0a661ef0f107, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: b6d9795d771694a47b056150be958118, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Outline
+    second: {fileID: 2100000, guid: 3158a196c1e70194880297c22e29111d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Outline.002
+    second: {fileID: 2100000, guid: 3158a196c1e70194880297c22e29111d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -102,6 +122,7 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
