@@ -165,12 +165,13 @@ MonoBehaviour:
   - {fileID: 7608925442275323685}
   - {fileID: 5285491129034049938}
   - {fileID: -1478975275668453904}
+  - {fileID: 3648545317958386690}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8969678672991903092}
   StringsBanks:
   - {fileID: 5623701174005439765}
-  cacheTime: 638199747241694547
+  cacheTime: 638200036072265399
   cacheVersion: 131603
 --- !u!114 &2314256664117296448
 MonoBehaviour:
@@ -255,6 +256,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 41122
+--- !u!114 &3648545317958386690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Grito
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Grito
+  Guid:
+    Data1: 564308801
+    Data2: 1217955410
+    Data3: 2111181449
+    Data4: 2035455336
+  Banks:
+  - {fileID: 8969678672991903092}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2450
 --- !u!114 &4199439091468880175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,10 +406,10 @@ MonoBehaviour:
   Path: Assets/Sounds/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638199747241694547
+  lastModified: 638200036072265399
   FileSizes:
   - Name: Desktop
-    Value: 1588
+    Value: 1636
   Exists: 1
 --- !u!114 &6374105242558473599
 MonoBehaviour:
@@ -584,8 +612,8 @@ MonoBehaviour:
   Path: Assets/Sounds/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638199747241664533
+  lastModified: 638200036072225400
   FileSizes:
   - Name: Desktop
-    Value: 9557184
+    Value: 9580864
   Exists: 1
